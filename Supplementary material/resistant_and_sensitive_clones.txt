@@ -1,0 +1,20 @@
+Dataset,Treatment,Clone,Type
+SA535,Untreated,Q,sensitive
+SA535,Untreated,J,sensitive
+SA535,Cisplatin,S,resistant
+SA535,Cisplatin,T,resistant
+SA535,Cisplatin,S_T,resistant_merged
+SA535,Cisplatin,R,ancestor-of-resistant
+SA535,CX5461,U,resistant
+SA535,CS5461,R,ancestor-of-resistant
+SA535, M_N_O CX-5461-can be merged?? YES
+SA609,Untreated,C,sensitive
+SA609,Untreated,H,sensitive
+SA609,Untreated,C_H,sensitive_merged-We already have fitClone so will take only H
+SA609,Cisplatin,R,resistant
+SA609,Cisplatin,B,ancestor-of-resistant
+SA1035,Untreated,E,sensitive
+SA1035,Cisplatin,G,resistant
+SA1035,Cisplatin,H,resistant
+
+

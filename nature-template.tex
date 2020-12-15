@@ -1,0 +1,232 @@
+%% Template for a preprint Letter or Article for submission
+%% to the journal Nature.
+%% Written by Peter Czoschke, 26 February 2004
+%%
+
+
+
+
+\documentclass{nature}
+\usepackage{graphicx}	% for incorporating external images
+
+%% booktabs: provides some special commands for typesetting tables as used
+%% in excellent journals.  Ignore the examples in the Lamport book!
+\usepackage{booktabs}
+\usepackage{tabu}
+\usepackage{longtable}
+\usepackage{threeparttable}
+\usepackage{tabularx}
+\usepackage{lscape}
+\usepackage{setspace}
+\usepackage{amsmath}
+\usepackage{capt-of}
+\usepackage{placeins}
+\usepackage{rotating}
+\usepackage{adjustbox}
+\usepackage{ccaption}
+\usepackage{textcomp}
+\usepackage{textgreek}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{scrpage2}
+\usepackage{ulem}
+
+
+
+
+%% make sure you have the nature.cls and naturemag.bst files where
+%% LaTeX can find them
+
+\bibliographystyle{naturemag}
+
+\title{Drug-induced evolution of triple negative breast cancer revealed by single-cell RNA sequencing}
+%{Longitudinal tracking of drug-induced transcriptomic reprogramming and RNA velocity in triple negative breast cancer pre-clinical models}
+
+%% Notice placement of commas and superscripts and use of &
+%% in the author list
+
+\author{Farhia Kabeer*$^{1,2}$, Hoa Tran*$^{1,2}$, Mirela Andronescu*$^{1,2}$,
+%%%Need to discuss %%Subject to change 
+   Nicholas Ceglia$^{1,2}$, 
+   Hakwoo Lee$^{1,2}$, 
+   Sohrab Salehi$^{1,2}$,
+	Marc Williams$^{1,2}$
+	Beixi Wang$^{1,2}$
+	Justina Biele$^{1,2}$
+	Jazmine Brimhall$^{1,2}$
+	David Gee$^{1,2}$
+	Ciara O’Flanagan$^{1,2}$,
+	Teresa Ruiz de Algara$^{1,2}$,
+	Peter Eirew$^{1,2}$,
+	Takako Kono$^{1,2}$,
+	Jennifer Pham$^{1,2}$,
+	Daniel Lai$^{1,2}$,
+	Richard Moore$^{1,2}$,
+	Andrew J. Mungall$^{1,2}$,
+	Marco A. Marra$^{1,2}$,
+	IMAXT Consortium$^{1,2}$,
+	Andrew McPherson$^{1,2}$,
+	Andrew Roth$^{\dagger}$^{1,2}$,
+	Kieran R. Campbell{\dagger}$^{1,2}$
+	Sohrab P Shah$^{\dagger}$^{1,2}$,
+    Samuel Aparicio$^{\dagger}$^{1,2}$}
+
+
+\begin{document}
+  \maketitle
+\begin{affiliations}
+ \item Department of Molecular Oncology, British Columbia Cancer Research Centre, Vancouver, BC, Canada
+ \item Department of Pathology and Laboratory Medicine, University of British Columbia, Vancouver, BC, Canada 
+\end{affiliations}
+
+\noindent {* - equal contribution}\newline
+
+\begin{abstract}
+Emergence of resistance is a major limitation for successful cancer treatment. Resistance can develop due to a variety of reasons but sometimes there is no clear genomic alterations in the cancer cells leading to the possibility of non-genetic causes, including epigenomes and transcriptomes. Longitudinal sequencing has the potential to reveal evolutionary dynamics in cancers. Here we sought to elucidate the mechanisms of acquired drug resistance by systematically perturbing three breast cancer patient derived xenograft models under continuous and interrupted drug exposure. Importantly, we also found that the combination of transcriptomes and sc-RNA velocity unreveals some new  candidates contributing to platinum resistance..........
+ 
+ 
+\end{abstract}
+
+In spite of advanced technologies and treatment, triple negative breast cancer still facing the problems of tumor recurrence and drug resistance.
+For any given difference between the types of drug resistance, for example, the expression of a particular gene, it is assumed that differences arise deterministically or probabilistically in the configuration of transcription factors regulating the genes in the tumors. Cancer cells in distinct cell- states often exhibit important differences in functional properties depending on the which genes are turned on and off resulting in sensitive or resistant phenotype.
+
+The most challenging analysis is to differentiate whether the change in gene expression leading to change in cellular state is stochastic\cite{raj2008nature} and random or its deterministic to produce the same output under similar environment.
+Cancer cells in distinct cell- states often exhibit important differences in functional properties depending on which genes are turned on and off resulting in sensitive  or resistant phenotype.
+Previously it is shown that unique cells within a population can exhibit fluctuations in expression of a group of genes, that could predict distinct phenotypes \cite{shaffer2019memory}.
+Un-like genomic clones that could get selected in resistant phenotype \cite{salehi2020single}, we still are not clear whether the cell-states are acquainted for this kind of behaviour or the selected states are pre-existing in the cancer population and under continues pressure shows obvious dynamics or there is a transition from one state to another that ultimately gets selected over time. Because of difficulty to analyse longitudinal patient's samples for single cell gene expression and lack of multiple longitudinal pre-clinical breast cancer models, these questions remains unexplored.
+The introduction of RNA velocity in single cells has opened up new ways of studying cellular differentiation. Time derivative of the gene expression state can be directly estimated by distinguishing unspliced and spliced mRNAs in common single-cell RNA sequencing protocols. RNA velocity is a high-dimensional vector that predicts the future state of individual cells on a timescale of hours.......
+Here we set to examine three breast cancer patient derived xenografts (PDX) that were serially challenged for around 4-5 cycles with platinum compound until they started showing resistant behaviour. We wanted to understand the magnitude of fluctuations in gene expression from sensitive to resistant phenotype.
+
+ 
+
+
+\begin{figure}
+	\centering
+	\includegraphics[width=\textwidth]{Figures/Schematicsoverview .png}
+	\caption[Establishment of]
+	{\small
+	    \textbf{Schematic overview of experimental design and workflow of quantitative gene expression analysis. 
+} 
+	}
+	\label{fig:Schematicsoverview}
+\end{figure}
+
+
+\section*{Results}
+
+\subsection{Identifying resistance phenotype using single-cell RNA sequencing time series data under platinum}
+
+\subsubsection{How much of the transcriptome is altered by platinum treatment in a drug resistant state}
+- How many gene clusters are showing drug induced directional dynamics.
+Identification of gene expression in monotonically increasing/decreasing clusters.
+- Estimation of phenotypic volume over time.
+- Pathways upregulated and downregulated
+- Pathways network analysis
+\subsubsection{How much of the transcriptome is reversed by platinum withdrawal?}
+Gene expression analysis in coupled drug holiday samples
+
+\subsection{Longitudinal RNA-seq analysis of gene expression changes}
+
+
+\subsubsection{Genes that are monotonically increasing with each cycle of Platinum in SA609-FBI, SA1035-APOBEC and SA535- BRCA 1 (all TP53 def)}
+
+\subsubsection{Genes that are monotonically increasing with each cycle of CX-5461 in SA535}
+
+
+\subsubsection{Intersection of genes in 3 TNBC PDX that are monotonically increasing under platinum}
+
+
+\subsubsection{Which genes are highly expressed under platinum in all three PDX?}
+
+\subsubsection{What genes are differentially expressed in all 3 PDX under platinum?}
+- Are the genes increasing monotonically under platinum same under CX-5461?
+- Genes that are monotonically decreasing with each cycle of Platinum in SA609-FBI, SA1035-APOBEC and SA535- BRCA 1(all TP53 def)
+- Intersection of genes in 3 TNBC PDX that are monotonically decreasing under platinum 
+- Expression of which genes are decreasing in all 3 PDX under platinum? - Are the genes decreasing monotonically under platinum same under CX-5461?
+
+
+\subsection{TNBC PDX exhibit cell transitions and cell state changes with velocity vector in high dimension space}
+
+Using scvelo and velocyto to detect dynamic
+changes in data
+\subsection{Quantification of the time-dependent relationship between precursor and mature mRNA}
+use the model: first time derivative of the spliced mRNA abundance (RNA velocity), determined by the
+balance between production of spliced mRNA from unspliced mRNA, and mRNA degradation.
+
+\subsection{Estimation of potential cell transitions with velocity vector in high dimension space and estimate the possible cell state changes }
+- Detect genes that express the direction of changes.
+- Reconstruct temporal sequences
+
+\subsection{Top genes that show dynamic changes, differentiate by latent time} 
+Cysplatin markers: ATF3, RND3, ATP1B1,...
+•ATF3 inhibits the tumorigenesis and progression of hepatocellular carcinoma cells via upregulation of CYR61 expression
+•RND3: Pathophysiological Functions of Rnd3/RhoE
+•ATP1B1-Transport genes related to Cisplatin resistance
+
+
+
+
+\begin{methods}
+Three triple negative breast cancer (TNBC) patient derived xenograft (PDX) series treated with Cisplatin for multiple cycles.
+SA609 
+SA1035
+SA535
+
+\subsection{Method subsection.}
+
+Here is a description of a specific method used.  Note that the
+subsection heading ends with a full stop (period) and that the
+command is \verb|\subsection{}| not \verb|\subsection*{}|.
+
+\end{methods}
+
+%% Put the bibliography here, most people will use BiBTeX in
+%% which case the environment below should be replaced with
+%% the \bibliography{} command.
+
+% \begin{thebibliography}{1}
+% \bibitem{dummy} Articles are restricted to 50 references, Letters
+% to 30.
+% \bibitem{dummyb} No compound references -- only one source per
+% reference.
+% \end{thebibliography}
+
+\bibliographystyle{naturemag}
+\bibliography{sample}
+
+
+%% Here is the endmatter stuff: Supplementary Info, etc.
+%% Use \item's to separate, default label is "Acknowledgements"
+
+\begin{addendum}
+ \item Put acknowledgements here.
+ \item[Competing Interests] The authors declare that they have no
+competing financial interests.
+ \item[Correspondence] Correspondence and requests for materials
+should be addressed to A.B.C.~(email: myaddress@nowhere.edu).
+\end{addendum}
+
+%%
+%% TABLES
+%%
+%% If there are any tables, put them here.
+%%
+
+\begin{table}
+\centering
+\caption{Characteristics of the TNBC used in this study}
+\medskip
+\begin{tabular}{ccccc}
+\hline
+PDX ID & Pt's stage/ grade & Mol.subtype & Mut.sig\\
+\hline
+SA609 & IIA/3 & Basal & TP53 def, MMRD-1, POLH, Clust-FBI,Clust-SV, Tr \\
+SA1035 & III/3 & Basal & HRD, APOBEC-Like, POLH\\
+SA535 & IIB/3 & Basal & BRCA 1 def, HRD\\
+
+
+\hline
+\end{tabular}
+\end{table}
+
+\end{document}
