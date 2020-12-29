@@ -1,0 +1,48 @@
+\subsection{Differential expression analysis}
+Differential expression quantifiers including log2 fold change and FDR  were computed using the R 3.6.0 Bioconductor package \texttt{edgeR\_3.26.0} that implements scRNAseq differential expression analysis methodology based on the negative binomial distribution. Given the raw counts for the cells in two clones, we first call the \texttt{estimateDisp()} function to estimate the dispersion by fitting a generalized linear model that accounts for all systematic sources of variation. Next, we use the \texttt{edgeR} functions \texttt{glmQLFit()} and \texttt{glmQLFTest()} to perform a quasi-likelihood dispersion estimation and hypothesis testing that assigns false discovery rate values to each gene. In the track and volcano plots, a positive log2 fold change value for clone X relative to clone Y signifies that the gene is significantly more upregulated (at a given FDR threshold) in X than in Y while taking into consideration all the expression values for all the genes in both clones. Similarly, a gene with negative log2 fold change is significantly more downregulated in X than in Y.
+
+\subsection{Global proportion figure figure2}
+
+Panel A: 
+Proportion in genome: we do \texttt{sitka} tree inference, then we can group cells with similar profiles into clones. So for each clone, we summary each clone by its median copy number profile. 
+median copy number profile : for each segment position, we get copy number state of each cell in this clone, and get median of copy number state. 
+
+In total, we have 9000 segment position with copy number change out of 22k positions. 
+We do intersection with DE genes that we obtained from DE analysis using edgeR, see that there are 2000 segment position that have copy number -genes driven. 
+2000/9000 --> red color (they are matching with our DE genes)
+7000/9000 --> green colors with copy number change. Genes in transcriptome can have drug effect but not significant difference between 2 clones in rna-seq DE analysis. 
+
+
+Panel B: edgeR
+Do differential expression resistant vs sensitive (EdgeR), 
+we found . 4000 DE genes
+We find overlap between these DE genes with segment copy number position. 
+Ex: 2000 incis, 2000/4000 = 50\% in cis , divide into increase and decrease
+2000 in-trans, divide into up-regulated and down-regulated 
+
+\subsection{Line trajectories-Fig3}
+- From Hoas volcanoes DE common genes
+
+
+
+
+
+\subsection{Volcanoes and track plots}
+
+
+
+
+
+
+\subsection{Pathways evolution}
+
+
+
+
+\subsection{Regression analysis}
+
+
+
+
+\subsection{Line trajectories-From the regression out put and pathways}
+did you select common genes in all PDX? or did you select from sensitive to resistant?
